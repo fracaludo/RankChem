@@ -1,79 +1,65 @@
-![Project Logo](assets/banner.png)
-
-![Coverage Status](assets/coverage-badge.svg)
-
-<h1 align="center">
-RankChem
-</h1>
-
-<br>
-
-
-RankChem project
+# ChemInterface package for reactivity analysis
+### Project in practical programming in chemistry course EPFL CH-200
 
 ## 🔥 Usage
 
-```python
-from mypackage import main_func
+This repository provides the user with a package which will display an interactive interface where the user will be able to input the SMILEs of multiple molecules. The user will then be able choose if he wants to analyze their electrophilicity or nucleophilicity. The interfcace will then display the reactivity ranking of the molecules based on the option you chose. Moreover, it will display their 3D structure with their most nucleophilic and electrophilic sites highlighted.
 
-# One line to rule them all
-result = main_func(data)
-```
+Developpers:
+- Ludovica Fracassi, https://github.com/fracaludo
+- Emma Kappeler, https://github.com/kappelemma
 
-This usage example shows how to quickly leverage the package's main functionality with just one line of code (or a few lines of code). 
-After importing the `main_func` (to be renamed by you), you simply pass in your `data` and get the `result` (this is just an example, your package might have other inputs and outputs). 
-Short and sweet, but the real power lies in the detailed documentation.
+
+Before installing everything, let's firts define electrophilicity and nucleophilicity!!
+
+**What is electrophilicity and nucleophilicity ?**
+   - Electrophilicity and nucleophilicity are mesures of the reactivity of molecules....
+
+Now let's go through the steps required to use this package.
 
 ## 👩‍💻 Installation
 
-Create a new environment, you may also give the environment a different name. 
-
-```
-conda create -n Rankchem python=3.10 
-```
-
-```
-conda activate Rankchem
-(conda_env) $ pip install .
+RankChem can be installed using pip as followed:
+```bash
+pip install rankchem
 ```
 
-If you need jupyter lab, install it 
+The package can also be installed from source by running the following commands:
 
+First, clone the repository from github and go in the folder.
+```bash
+git clone [https://github.com/fracaludo/PPchem-project.git]
+cd rankchem
 ```
-(Rankchem) $ pip install jupyterlab
+Then, install the package using :
+```bash
+pip install -e .
 ```
+Or by following this single command:
 
-
-## 🛠️ Development installation
-
-Initialize Git (only for the first time). 
-
-Note: You should have create an empty repository on `https://github.com:kappelemma/RankChem`.
-
+```bash
+pip install git+https://github.com/fracaludo/PPchem-project.git
 ```
-git init
-git add * 
-git add .*
-git commit -m "Initial commit" 
-git branch -M main
-git remote add origin git@github.com:kappelemma/RankChem.git 
-git push -u origin main
+#### Imported packages
+
+In order to run the package correctly, the following packages need to be installed using the following commands. Moreover, this package works for python ....
+
+```bash
+conda config --add channels conda-forge
+
+conda install -c conda-forge morfeus-ml
+conda install "libblas=*=*mkl"
+conda install xtb-python
+conda install -c conda-forge rdkit
+conda install -c conda-forge pyvistaqt
+conda install -c conda-forge numpy
+conda install -c conda-forge py3Dmol
 ```
-
-Then add and commit changes as usual. 
-
-To install the package, run
-
-```
-(Rankchem) $ pip install -e ".[test,doc]"
-```
-
-### Run tests and coverage
-
-```
-(conda_env) $ pip install tox
-(conda_env) $ tox
-```
-
+Specifically, from these packages, the following subpackages are required:
+```bash
+from rdkit import Chem
+from rdkit.Chem import AllChem, rdDistGeom
+from morfeus import read_xyz, XTB
+import py3Dmol
 
 
