@@ -1,2 +1,79 @@
-# Project
-CH-200 project: We would like to rank a list of molecules accordind to their nucleophilicity/electrophilicity. To do so we've installed xtb and use morfeus package to calculate the fukui electrophiliciy and nucleophilicity of each atom in every molecule. Finally we wanted to display the ranked molecules in 3D and highlight the nu/el sites on them. 
+![Project Logo](assets/banner.png)
+
+![Coverage Status](assets/coverage-badge.svg)
+
+<h1 align="center">
+RankChem
+</h1>
+
+<br>
+
+
+RankChem project
+
+## 🔥 Usage
+
+```python
+from mypackage import main_func
+
+# One line to rule them all
+result = main_func(data)
+```
+
+This usage example shows how to quickly leverage the package's main functionality with just one line of code (or a few lines of code). 
+After importing the `main_func` (to be renamed by you), you simply pass in your `data` and get the `result` (this is just an example, your package might have other inputs and outputs). 
+Short and sweet, but the real power lies in the detailed documentation.
+
+## 👩‍💻 Installation
+
+Create a new environment, you may also give the environment a different name. 
+
+```
+conda create -n Rankchem python=3.10 
+```
+
+```
+conda activate Rankchem
+(conda_env) $ pip install .
+```
+
+If you need jupyter lab, install it 
+
+```
+(Rankchem) $ pip install jupyterlab
+```
+
+
+## 🛠️ Development installation
+
+Initialize Git (only for the first time). 
+
+Note: You should have create an empty repository on `https://github.com:kappelemma/RankChem`.
+
+```
+git init
+git add * 
+git add .*
+git commit -m "Initial commit" 
+git branch -M main
+git remote add origin git@github.com:kappelemma/RankChem.git 
+git push -u origin main
+```
+
+Then add and commit changes as usual. 
+
+To install the package, run
+
+```
+(Rankchem) $ pip install -e ".[test,doc]"
+```
+
+### Run tests and coverage
+
+```
+(conda_env) $ pip install tox
+(conda_env) $ tox
+```
+
+
+

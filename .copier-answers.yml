@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 66fd52c
+_src_path: gh:schwallergroup/copier-liac-minimal
+author_email: emma.kappeler@epfl.ch
+author_name: Emma Kappeler
+github_org: kappelemma
+package_name: Rankchem
+project_name: RankChem
+short_description: RankChem project
