@@ -13,7 +13,7 @@ Developpers:
 Before installing everything, let's first define electrophilicity and nucleophilicity!!
 
 **What is electrophilicity and nucleophilicity ?**
-   - Electrophilicity and nucleophilicity are mesures of the reactivity of molecules....
+   - Electrophilicity and nucleophilicity are measures of the reactivity of molecules....
 
 Now let's go through the steps required to use this package.
 
@@ -67,6 +67,6 @@ import py3Dmol
 
 ....
 
-## ▶️ Starting off
+## 🚥 Let's get started!
 
 ....

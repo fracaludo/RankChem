@@ -1,3 +1,3 @@
-# Notebooks
-
-Folder to place your `.pynb` notebooks.
+## 📓 Notebooks
+Hi there!
+This folder contains our Notebook-based report :) 
