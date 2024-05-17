@@ -10,7 +10,7 @@ Developpers:
 - Emma Kappeler, https://github.com/kappelemma
 
 
-Before installing everything, let's firts define electrophilicity and nucleophilicity!!
+Before installing everything, let's first define electrophilicity and nucleophilicity!!
 
 **What is electrophilicity and nucleophilicity ?**
    - Electrophilicity and nucleophilicity are mesures of the reactivity of molecules....
