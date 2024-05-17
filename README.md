@@ -61,6 +61,7 @@ from rdkit import Chem
 from rdkit.Chem import AllChem, rdDistGeom
 from morfeus import read_xyz, XTB
 import py3Dmol
+```
 
 ## 🎥 How it works
 
