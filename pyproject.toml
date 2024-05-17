@@ -15,7 +15,7 @@ dependencies = [
     # "rdkit",
 ]
 authors = [
-    {name = "Emma Kappeler", email = "emma.kappeler@epfl.ch"}
+    {name = "Emma Kappeler", email = "emma.kappeler@epfl.ch"},
     {name = "Ludovica Fracassi", email = "ludovica.fracassi@epfl.ch"}
 ]
 classifiers = [
