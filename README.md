@@ -11,8 +11,8 @@
 This repository provides the user with a package which will display an interactive interface where the user will be able to input the SMILEs of multiple molecules. The user will then be able choose if he wants to analyze their electrophilicity or nucleophilicity. The interfcace will then display the reactivity ranking of the molecules based on the option you chose. Moreover, it will display their 3D structure with their most nucleophilic and electrophilic sites highlighted.
 
 Developpers:
-- Ludovica Fracassi, https://github.com/fracaludo [![jhc github](https://img.shields.io/badge/GitHub-fracaludo-181717.svg?style=flat&logo=github)](https://github.com/fracaludo)
-- Emma Kappeler, https://github.com/kappelemma [![jhc github](https://img.shields.io/badge/GitHub-kappelemma-181717.svg?style=flat&logo=github)](https://github.com/kappelemma)
+- Ludovica Fracassi [![jhc github](https://img.shields.io/badge/GitHub-fracaludo-181717.svg?style=flat&logo=github)](https://github.com/fracaludo)
+- Emma Kappeler [![jhc github](https://img.shields.io/badge/GitHub-kappelemma-181717.svg?style=flat&logo=github)](https://github.com/kappelemma)
 
 
 Before installing everything, let's first define electrophilicity and nucleophilicity!!
@@ -70,7 +70,7 @@ import py3Dmol
 
 ## 🎥 How it works
 
-....
+...
 
 ## 🚥 Let's get started!
 
