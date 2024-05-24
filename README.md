@@ -3,8 +3,7 @@
 [![alt text](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 [![Emma1](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
-![license](https://custom-icon-badges.demolab.com/github/license/denvercoder1/custom-icon-badges?logo=law&logoColor=white)
-
+![license](https://img.shields.io/badge/License-MIT-ac8b11.svg?style=for-the-badge&labelColor=blue)
 
 # 🔥 Usage
 
@@ -71,7 +70,7 @@ from rdkit import Chem
 from rdkit.Chem import AllChem, rdDistGeom
 from morfeus import read_xyz, XTB
 import py3Dmol
-from streamlit import ???
+import streamlit as st
 
 ```
 
