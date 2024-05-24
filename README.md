@@ -19,7 +19,7 @@ Before installing everything, let's first define electrophilicity and nucleophil
 
 **What is electrophilicity and nucleophilicity ?**
 
-Electrophilicity and nucleophilicity are measures of the reactivity of molecules....
+Electrophilicity and nucleophilicity are fundamental concepts in organic chemistry that describe the reactivity of molecules. Electrophilicity refers to the ability of a molecule or ion to accept an electron pair, making it an electron-loving species (electrophile). Electrophiles typically have a positive charge, partial positive charge, or an electron-deficient atom, making them attracted to electron-rich regions. On the other hand, nucleophilicity describes the ability of a molecule or ion to donate an electron pair, making it an electron-rich species (nucleophile). Nucleophiles are usually negatively charged or have lone pairs of electrons, such as anions, amines, and alcohols. The interaction between nucleophiles and electrophiles drives many chemical reactions, particularly in organic synthesis, where nucleophiles attack electrophiles to form new bonds.
 
 Now let's go through the steps required to use this package.
 
@@ -27,7 +27,7 @@ Now let's go through the steps required to use this package.
 
 RankChem can be installed using pip as followed:
 ```bash
-pip install rankchem
+pip install Rankchem
 ```
 
 The package can also be installed from source by running the following commands:
@@ -61,6 +61,7 @@ conda install -c conda-forge pyvistaqt
 conda install -c conda-forge numpy
 conda install -c conda-forge py3Dmol
 conda install -c streamlit
+conda install -c stmol
 
 
 ```
@@ -71,6 +72,7 @@ from rdkit.Chem import AllChem, rdDistGeom
 from morfeus import read_xyz, XTB
 import py3Dmol
 from streamlit import ???
+
 ```
 
 ## 🎥 How it works

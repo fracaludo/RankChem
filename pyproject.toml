@@ -8,12 +8,22 @@ packages = ["src/Rankchem"]
 [project]
 name = "RankChem"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.8"
 license = {file = "LICENSE"}
 description = "RankChem project"
 dependencies = [
     # "rdkit",
+    # "libblas=*=*mkl",
+    # "xtb-python",
+    # "morfeus-ml",
+    # "pyvistaqt",
+    # "numpy",
+    # "py3Dmol",
+    # "streamlit",
+    # "stmolt"
 ]
+
+
 authors = [
     {name = "Emma Kappeler", email = "emma.kappeler@epfl.ch"},
     {name = "Ludovica Fracassi", email = "ludovica.fracassi@epfl.ch"}
