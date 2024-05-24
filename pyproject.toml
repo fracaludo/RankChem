@@ -13,14 +13,14 @@ license = {file = "LICENSE"}
 description = "RankChem project"
 dependencies = [
      "rdkit",
-     "libblas=*=*mkl",
+     "libblas",
      "xtb-python",
      "morfeus-ml",
      "pyvistaqt",
      "numpy",
      "py3Dmol",
      "streamlit",
-     "stmolt"
+     "stmol"
 ]
 
 
