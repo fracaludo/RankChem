@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from src.Rankchem.for_streamlit.Highlighting import smiles_to_xyz
+from Rankchem.for_streamlit.Highlighting import smiles_to_xyz
 import os
 
 def test_smiles_to_xyz():

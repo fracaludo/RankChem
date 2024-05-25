@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from src.Rankchem.for_streamlit.Highlighting import visualize_molecule
+from Rankchem.for_streamlit.Highlighting import visualize_molecule
 
 def test_visualize_molecule():
     smiles = "C(=O)O"
