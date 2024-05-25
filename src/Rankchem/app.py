@@ -4,13 +4,13 @@ import os
 import sys
 
 # Set up the path to import the scripts from the "for streamlit" directory
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'for_streamlit')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'for streamlit')))
 
 # Import the run_ranking function from ranking.py
 from Ranking import run_Ranking
 
 # Import the run_active_sites function from active_sites.py
-from Highlighting import run_Highlighting
+from Highlighting import run_Highlighting 
 
 # Paths to images
 path = Path(__file__).parent / 'images'
@@ -87,9 +87,9 @@ def github():
     st.markdown("[Github Repository](https://github.com/fracaludo/RankChem.git)")
 
 # Check URL parameters for page navigation
-query_params = st.experimental_get_query_params()
+query_params = st.query_params
 if 'page' in query_params:
-    page_from_query = query_params['page'][0]
+    page_from_query = query_params['page']
     if page_from_query in ["Home", "Documentation", "Github", "Active Sites", "Ranking"]:
         st.session_state.page = page_from_query
     else:
@@ -99,19 +99,19 @@ if 'page' in query_params:
 st.sidebar.title("RankChem")
 if st.sidebar.button("Home"):
     st.session_state.page = "Home"
-    st.experimental_set_query_params(page="Home")
+    st.query_params = {"page": "Home"}
 if st.sidebar.button("Documentation"):
     st.session_state.page = "Documentation"
-    st.experimental_set_query_params(page="Documentation")
+    st.query_params = {"page": "Documentation"}
 if st.sidebar.button("Github"):
     st.session_state.page = "Github"
-    st.experimental_set_query_params(page="Github")
+    st.query_params = {"page": "Github"}
 if st.sidebar.button("Active Sites"):
     st.session_state.page = "Active Sites"
-    st.experimental_set_query_params(page="Active Sites")
+    st.query_params = {"page": "Active Sites"}
 if st.sidebar.button("Ranking"):
     st.session_state.page = "Ranking"
-    st.experimental_set_query_params(page="Ranking")
+    st.query_params = {"page": "Ranking"}
 
 # Navigation based on session state
 if st.session_state.page == "Home":
@@ -124,3 +124,4 @@ elif st.session_state.page == "Active Sites":
     run_Highlighting()
 elif st.session_state.page == "Ranking":
     run_Ranking()
+
