@@ -17,7 +17,7 @@ def test_github():
     assert github is not None
 
 def test_run_active_sites():
-    assert run_active_sites is not None
+    assert run_Highlights is not None
 
 def test_run_ranking():
-    assert run_ranking is not None
+    assert run_Ranking is not None
