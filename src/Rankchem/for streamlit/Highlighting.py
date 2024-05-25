@@ -85,14 +85,16 @@ def get_max_fukui_avg(fukui_avg):
     max_value = fukui_avg[max_idx]
     return max_idx, max_value
 
-def visualize_molecule(smiles, adj_max_idx):
+def visualize_molecule(smiles, max_idx, highlight_color, representation):
     '''
     This function visualizes a molecule using 3D molecular visualization tools.
     It utilizes RDKit to generate a molecular model and Py3Dmol to render the model in a 3D viewer.
 
     Inputs:
     smiles: The SMILES representation of the molecule.
-    adj_max_idx: The index of the atom with the highest average Fukui function value, used for visualization highlighting.
+    max_idx: The index of the atom with the highest average Fukui function value, used for visualization highlighting.
+    highlight_color: The color to highlight the atom with the highest Fukui value.
+    representation: The representation style for the 3D visualization (e.g., Stick, Line, Cross, Sphere, Cartoon).
 
     Output:
     Displays the interactive 3D visualization of the molecule.
@@ -105,44 +107,51 @@ def visualize_molecule(smiles, adj_max_idx):
     mol_block = Chem.MolToMolBlock(mol)
     view = py3Dmol.view(width=800, height=600)
     view.addModel(mol_block, "mol")
-    style = {'stick': {}}
-    view.setStyle(style)
-    view.addStyle({'model': -1, 'serial': adj_max_idx-1}, {'sphere': {'radius': 0.5, 'color': 'blue', 'opacity': 0.8}})
+    view.setStyle({representation.lower(): {}})
+    view.addStyle({'model': -1, 'serial': max_idx-1}, {'sphere': {'radius': 0.5, 'color': highlight_color, 'opacity': 0.8}})
     view.zoomTo()
     showmol(view, height=500, width=500)
 
-
-def main(smiles, fukui_type, num_iterations):
+def run_active_sites():
     '''
-    This function serves as the main entry point for the program.
-    It orchestrates the execution of other functions to perform a series of tasks,
-    including generating XYZ files, calculating Fukui function values, computing averages,
-    identifying the atom with the highest average Fukui function value, and visualizing the molecule.
+    This function serves as the main entry point for the Streamlit application.
+    It provides a user interface for entering a SMILES string, selecting options for Fukui analysis,
+    and visualizing the molecule with highlighted active sites.
 
     Inputs:
-    smiles: The SMILES representation of the molecule.
-    fukui_type: The type of Fukui function to be calculated.
-    num_iterations: The number of iterations to perform calculations (potentially for statistical analysis).
+    None
 
     Output:
-    Displays various information, such as Fukui function values and the visualization of the molecule.
+    Displays the user interface and results of the Fukui analysis and molecular visualization.
     '''
-    xyz_filename = smiles_to_xyz(smiles)
-    elements, coordinates = read_xyz(xyz_filename)
-    
-    fukui_type_map = {"E": "nucleophilicity", "N": "electrophilicity"}
-    fukui_type_str = fukui_type_map.get(fukui_type.upper())
-    
-    fukui_dicts = []
-    for _ in range(num_iterations):
-        fukui_dict = calculate_fukui(elements, coordinates, fukui_type_str)
-        fukui_dicts.append(fukui_dict)
-    
-    fukui_avg = average(fukui_dicts)
-    max_idx, max_value = get_max_fukui_avg(fukui_avg)
+    st.title("Molecule Visualization and Fukui Analysis")
+    st.write("Use the options in the sidebar to visualize the molecule and highlight Fukui indices.")
 
-    st.write("The results are shown below:")
-    st.write(f"The Fukui average values for each atom: {fukui_avg}")
-    st.write(f"The Atom with max average Fukui value: Atom {max_idx} with a value of {max_value}")
-    adj_max_idx=max_idx
-    visualize_molecule(smiles, adj_max_idx)
+    # Input options
+    user_input = st.sidebar.text_input("Enter a SMILES string:", "CC=O")
+    fukui_type = st.sidebar.radio("Highlight nucleophile sites (N) or electrophile sites (E)?", ["E", "N"])
+    num_iterations = st.sidebar.slider("Number of iterations", min_value=1, max_value=10, value=1)
+    highlight_color = st.sidebar.color_picker("Highlight color", "#FF5733")
+    representation = st.sidebar.selectbox("Choose Py3Dmol representation", ["Stick", "Line", "Cross", "Sphere", "Cartoon"])
+    
+    if st.sidebar.button("Submit"):
+        # Generate XYZ file
+        xyz_filename = smiles_to_xyz(user_input)
+        elements, coordinates = read_xyz(xyz_filename)
+        
+        # Calculate Fukui indices
+        fukui_type_map = {"E": "local_nucleophilicity", "N": "local_electrophilicity"}
+        fukui_type_str = fukui_type_map.get(fukui_type.upper())
+        
+        fukui_dicts = []
+        for _ in range(num_iterations):
+            fukui_dict = calculate_fukui(elements, coordinates, fukui_type_str)
+            fukui_dicts.append(fukui_dict)
+        
+        fukui_avg = average(fukui_dicts)
+        max_idx, max_value = get_max_fukui_avg(fukui_avg)
+        
+        st.write(f"Fukui average values: {fukui_avg}")
+        st.write(f"Atom with max average Fukui value: {max_idx} with value {max_value}")
+        
+        visualize_molecule(user_input, max_idx, highlight_color, representation)
