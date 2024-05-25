@@ -14,10 +14,10 @@ from active_sites import run_active_sites
 
 # Paths to images
 path = Path(__file__).parent / 'images'
-path_img1 = path / 'Acetaldehyde.png'
-path_img2 = path / 'Git.png'
-path_img3 = path / 'Acetaldehyde.png'
-path_img4 = path / 'Acetaldehyde.png'
+path_img1 = path / 'rank.png'
+path_img2 = path / 'rank.png'
+path_img3 = path / 'rank.png'
+path_img4 = path / 'rank.png'
 
 # Initialize session state
 if 'page' not in st.session_state:
