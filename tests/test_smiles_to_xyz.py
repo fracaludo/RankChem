@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from Rankchem.Highlighting import smiles_to_xyz
+from src.Rankchem.for_streamlit.Highlighting import smiles_to_xyz
 import os
 
 def test_smiles_to_xyz():
@@ -14,3 +14,5 @@ def test_smiles_to_xyz():
         content = f.readlines()
     assert len(content) > 2, "Test failed: File content is too short"
     os.remove(filename)
+
+

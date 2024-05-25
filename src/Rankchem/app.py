@@ -4,7 +4,7 @@ import os
 import sys
 
 # Set up the path to import the scripts from the "for streamlit" directory
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'for streamlit')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'for_streamlit')))
 
 # Import the run_ranking function from ranking.py
 from ranking import run_ranking
