@@ -7,10 +7,10 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'for_streamlit')))
 
 # Import the run_ranking function from ranking.py
-from ranking import run_ranking
+from Ranking import run_Ranking
 
 # Import the run_active_sites function from active_sites.py
-from active_sites import run_active_sites
+from Highlighting import run_Highlighting
 
 # Paths to images
 path = Path(__file__).parent / 'images'
@@ -121,6 +121,6 @@ elif st.session_state.page == "Documentation":
 elif st.session_state.page == "Github":
     github()
 elif st.session_state.page == "Active Sites":
-    run_active_sites()
+    run_Highlighting()
 elif st.session_state.page == "Ranking":
-    run_ranking()
+    run_Ranking()

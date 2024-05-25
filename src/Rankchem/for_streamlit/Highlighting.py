@@ -112,7 +112,7 @@ def visualize_molecule(smiles, max_idx, highlight_color, representation):
     view.zoomTo()
     showmol(view, height=500, width=500)
 
-def run_active_sites():
+def run_Highlighting():
     '''
     This function serves as the main entry point for the Streamlit application.
     It provides a user interface for entering a SMILES string, selecting options for Fukui analysis,

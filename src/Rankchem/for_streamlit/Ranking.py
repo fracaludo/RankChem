@@ -75,7 +75,7 @@ def rank_descriptors(descriptors):
     ranked_descriptors = sorted(descriptors, key=lambda x: x[1], reverse=True)
     return ranked_descriptors
 
-def run_ranking():
+def run_Ranking():
     '''
     Main function for the Streamlit application.
     Provides a user interface for inputting a list of SMILES strings, selecting a descriptor type, and running the ranking process.
