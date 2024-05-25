@@ -7,6 +7,9 @@ from Rankchem.for_streamlit.Highlighting import visualize_molecule
 def test_visualize_molecule():
     smiles = "C(=O)O"
     adj_max_idx = 1
-    visualize_molecule(smiles, adj_max_idx)
+    highlight_color = "red"  
+    representation = "stick"  
+    visualize_molecule(smiles, adj_max_idx, highlight_color, representation)
+
 
 
