@@ -130,7 +130,7 @@ The streamlit interface can now finally be used!!
 
 Just click on the logo below ;)
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rankchemgit-yqfwtalscfzearno3qc62m.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rankchemgit-lrweyqrysakzpjqxruwvjd.streamlit.app)
 
 ## 🔎 References an documentation
 
