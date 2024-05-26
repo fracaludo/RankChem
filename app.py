@@ -6,7 +6,8 @@ import sys
 st.set_page_config(layout="wide")
 
 current_dir = Path(__file__).parent.resolve()
-for_streamlit_dir = current_dir / 'for_streamlit'
+for_streamlit_dir = current_dir / 'src' / 'RankChem' / 'for_streamlit'
+images_dir = current_dir / 'src' / 'RankChem' / 'images'
 sys.path.insert(0, str(for_streamlit_dir))
 
 
@@ -24,8 +25,8 @@ except ModuleNotFoundError as e:
 
 
 
-path_img2 = current_dir / 'images' / 'rank.png'
-path_img1 = current_dir / 'images' / 'highlight.png'
+path_img2 = images_dir / 'rank.png'
+path_img1 = images_dir / 'highlight.png'
 
 
 if 'page' not in st.session_state:
