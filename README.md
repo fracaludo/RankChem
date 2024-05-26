@@ -2,12 +2,12 @@
 
 # ChemInterface for reactivity analysis
 ### Project in practical programming in chemistry course EPFL CH-200
-[![alt text](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
+[![python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-[![Emma1](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
+[![jup](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
 ![license](https://img.shields.io/badge/License-MIT-ac8b11.svg?style=for-the-badge&labelColor=green)
 
-# 🔥 Usage
+## 🔥 Usage
 
 This repository provides the user with a package which will display an interactive interface where the user will be able to analyse the reactivity of meolecules based on their electrophilicity or nucleophilicity. The package leads the user to a streamlit hompage. Two features are available. The first one enables the user to visulaize a molecule in 3D with the reactive site highlighted. The second feature ranks multiple molecule in the order of decreasing reactivity based on descriptors. Both these feature were made using XTB calculations.
 
@@ -33,19 +33,19 @@ pip install Rankchem
 
 The package can also be installed from source by running the following commands:
 
-First, clone the repository from github and go in the folder.
+First, clone the repository from Github and go in the RankChem folder.
 ```bash
-git clone [https://github.com/fracaludo/PPchem-project.git]
-cd rankchem
+git clone [https://github.com/fracaludo/RankChem.git]
+cd RankChem
 ```
 Then, install the package using :
 ```bash
 pip install -e .
 ```
-Or by following this single command:
+Or by installing it directly from Github via pip:
 
 ```bash
-pip install git+https://github.com/fracaludo/PPchem-project.git
+pip install git+https://github.com/fracaludo/RankChem.git
 ```
 #### Imported packages
 
@@ -98,3 +98,14 @@ The streamlit interface can now finally be used!!
 Just click on the logo below ;)
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://<your-custom-subdomain>.streamlit.app)
+
+## 🚥 References an documentation
+
+Here is some usefull reading on the packages that we used to create this project.
+
+https://digital-chemistry-laboratory.github.io/morfeus/
+https://github.com/digital-chemistry-laboratory/morfeus
+https://github.com/napoles-uach/stmol
+https://xtb-python.readthedocs.io/en/latest/index.html#
+
+
