@@ -132,7 +132,7 @@ Just click on the logo below ;)
 
 ## 🔎 References an documentation
 
-Here is some usefull reading on the packages that we used to create this project.
+Here is some useful reading on the packages that we used to create this project.
 
 https://digital-chemistry-laboratory.github.io/morfeus/
 https://github.com/digital-chemistry-laboratory/morfeus
