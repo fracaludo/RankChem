@@ -1,1 +1,0 @@
--c conda-forge xtb-python
