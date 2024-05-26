@@ -4,7 +4,7 @@
 ### Project in the *Practical programming in chemistry* course EPFL CH-200
 [![python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-[![jup](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
+[![jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
 ![license](https://img.shields.io/badge/License-MIT-ac8b11.svg?style=for-the-badge&labelColor=green)
 
 ## 🔥 Usage
@@ -12,8 +12,8 @@
 This repository provides the user with a package which will display an interactive interface where the user will be able to analyse the reactivity of meolecules based on their electrophilicity or nucleophilicity. The package leads the user to a streamlit hompage. Two features are available. The first one enables the user to visulaize a molecule in 3D with the reactive site highlighted. The second feature ranks multiple molecule in the order of decreasing reactivity based on descriptors. Both these feature were made using XTB calculations.
 
 The developpers of this package are:
-- Ludovica Fracassi [![jhc github](https://img.shields.io/badge/GitHub-fracaludo-181717.svg?style=flat&logo=github)](https://github.com/fracaludo)
-- Emma Kappeler [![jhc github](https://img.shields.io/badge/GitHub-kappelemma-181717.svg?style=flat&logo=github)](https://github.com/kappelemma)
+- Ludovica Fracassi, 2nd year Bachelor student in Chemistry and Chemical engeneering at EPFL [![jhc github](https://img.shields.io/badge/GitHub-fracaludo-181717.svg?style=flat&logo=github)](https://github.com/fracaludo)
+- Emma Kappeler, 2nd year Bachelor student in Chemistry and Chemical engeneering at EPFL [![jhc github](https://img.shields.io/badge/GitHub-kappelemma-181717.svg?style=flat&logo=github)](https://github.com/kappelemma)
 
 
 Before installing everything, let's first define electrophilicity and nucleophilicity!!
@@ -26,6 +26,15 @@ Now let's go through the steps required to use this package.
 
 ## 👩‍💻 Installation
 
+❗ Before installing the package and all the dependencies, do not forget to create a new conda environment to prevent dependency conflicts and to keep the project isolated. This can be done by executing the folowing command:
+
+```bash
+conda create --name myenv python=3.10
+conda activate myenv
+```
+Where myenv is the name of your environment.
+
+The package runs on python 3.10 but supports python 3.8 through 3.10.
 RankChem can be installed using pip as followed:
 
 ```bash
@@ -47,15 +56,17 @@ Then, install the package using :
 pip install -e .
 ```
 
-Or by installing it directly from Github via pip:
+Tha package can also be installed directly from Github via pip by executing the following command:
 
 ```bash
 pip install git+https://github.com/fracaludo/RankChem.git
 ```
-#### Imported packages
 
 
-In order to run the package correctly, the following packages need to be installed using the following commands. The package runs on python 3.10 but supports python 3.8 through 3.10. It is recommended that dependencies are installed with conda if possible as the performance of the linear algebra backends is generally better than with pip.
+#### Required packages
+
+
+In order to run the package correctly, the following packages need to be installed using the following commands.
 
 ❗ xtb-python only works for IOS and Linux. If you are using Windows, you should install Ubuntu. Further information is available on: https://ubuntu.com/desktop/wsl
 
@@ -66,7 +77,7 @@ conda install "libblas=*=*mkl"
 conda install xtb-python
 ```
 
-The packages below should have been installed but if not, use the following commands:
+When installing the RankChem, the necessary dependencies should be installed automatically. However, if the dependencies are not installed as expected, please ensure you install the following packages by executing the following commands:
  
 ```bash
 conda install -c conda-forge morfeus-ml
@@ -91,7 +102,15 @@ import py3Dmol
 
 ## 🎥 How it works
 
-The user arrives to the RankChem Homepage where they can choose which feature they want to use.
+This project hase an interface based UI to interact with the functions. In order to use it, go to the directory where you cloned the repository and run the following commands in your terminal:
+```bash
+cd src
+cd Rankchem
+streamlit run app.py
+```
+The user then arrives to the RankChem Homepage where they can choose which feature they want to use.
+
+OR just jump to the *🚥 Let's get started!* section below and click on the streamlit badge.
 
 ![homepage](assets/homepage.png)
 
@@ -103,13 +122,15 @@ Lastly, the Ranking feature enable the user to input multiple smiles and again c
 
 ![ranking](assets/rankingexample.png)
 
+More information on the usage and limitations of the package can be found in our [jupyter notebook based report]https://github.com/fracaludo/RankChem/blob/main/notebooks/project_report.ipynb 📓
+
 ## 🚥 Let's get started!
 
 The streamlit interface can now finally be used!!
 
 Just click on the logo below ;)
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://<your-custom-subdomain>.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rankchemgit-yqfwtalscfzearno3qc62m.streamlit.app)
 
 ## 🔎 References an documentation
 
