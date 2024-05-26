@@ -61,7 +61,7 @@ doc = [
 
 [tool.hatch.version]
 path = "src/Rankchem/__init__.py"
-version = "0.0.1"
+version = "0.1.1"
 
 [tool.pytest.ini_options]
 testpaths = [

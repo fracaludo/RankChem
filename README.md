@@ -104,8 +104,6 @@ import py3Dmol
 
 This project hase an interface based UI to interact with the functions. In order to use it, go to the directory where you cloned the repository and run the following commands in your terminal:
 ```bash
-cd src
-cd Rankchem
 streamlit run app.py
 ```
 The user then arrives to the RankChem Homepage where they can choose which feature they want to use.
@@ -114,7 +112,7 @@ OR just jump to the *🚥 Let's get started!* section below and click on the str
 
 ![homepage](assets/homepage.png)
 
-The Highlight feature enabnles the user to input the smiles of a molecule and choose if nucleophilicity or electrophilicity is highlighted. The interface will then display the molecule in 3D with the chosen site highlighted. The user can also choose the visualiation style and the number of iterations in order to get a more precise result. The Fukui values of each atom will also be displayed. An example of the input and output is shown below:
+The Highlight feature enables the user to input the smiles of a molecule and choose if nucleophilicity or electrophilicity is highlighted. The interface will then display the molecule in 3D with the chosen site highlighted. The user can also choose the visualiation style and the number of iterations in order to get a more precise result. The Fukui values of each atom will also be displayed. An example of the input and output is shown below:
 
 ![highlight](assets/highlightexample.png)
 
@@ -134,7 +132,7 @@ Just click on the logo below ;)
 
 ## 🔎 References an documentation
 
-Here is some usefull reading on the packages that we used to create this project.
+Here is some useful reading on the packages that we used to create this project.
 
 https://digital-chemistry-laboratory.github.io/morfeus/
 https://github.com/digital-chemistry-laboratory/morfeus
