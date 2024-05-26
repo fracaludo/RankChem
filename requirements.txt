@@ -1,6 +1,5 @@
 morfeus_ml==0.7.2
-py3Dmol==2.0.0.post2
-py3Dmol==2.1.0
+py3Dmol
 pytest==8.2.1
 Rankchem==0.0.1
 rdkit==2023.9.6
