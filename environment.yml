@@ -1,5 +1,12 @@
 channels:
-- conda-forge
+  - conda-forge
+  - defaults
 dependencies:
-- xtb-python
-- rdkit
+  - morfeus-ml
+  - rdkit
+  - pyvistaqt
+  - numpy
+  - py3Dmol
+  - streamlit
+  - stmol
+  - xtb python
