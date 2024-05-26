@@ -1,15 +1,15 @@
 ![project logo](assets/nkChem.png)
 
-# ChemInterface package for reactivity analysis
+# ChemInterface for reactivity analysis
 ### Project in practical programming in chemistry course EPFL CH-200
 [![alt text](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 [![Emma1](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
-![license](https://img.shields.io/badge/License-MIT-ac8b11.svg?style=for-the-badge&labelColor=blue)
+![license](https://img.shields.io/badge/License-MIT-ac8b11.svg?style=for-the-badge&labelColor=green)
 
 # 🔥 Usage
 
-This repository provides the user with a package which will display an interactive interface where the user will be able to input the SMILEs of multiple molecules. The user will then be able choose if he wants to analyze their electrophilicity or nucleophilicity. The interfcace will then display the reactivity ranking of the molecules based on the option you chose. Moreover, it will display their 3D structure with their most nucleophilic and electrophilic sites highlighted.
+This repository provides the user with a package which will display an interactive interface where the user will be able to analyse the reactivity of meolecules based on their electrophilicity or nucleophilicity. The package leads the user to a streamlit hompage. Two features are available. The first one enables the user to visulaize a molecule in 3D with the reactive site highlighted. The second feature ranks multiple molecule in the order of decreasing reactivity based on descriptors. Both these feature were made using XTB calculations.
 
 The developpers of this package are:
 - Ludovica Fracassi [![jhc github](https://img.shields.io/badge/GitHub-fracaludo-181717.svg?style=flat&logo=github)](https://github.com/fracaludo)
@@ -64,9 +64,10 @@ conda install -c conda-forge py3Dmol
 conda install -c streamlit
 conda install -c stmol
 
-
 ```
+
 Specifically, from these packages, the following subpackages are required:
+
 ```bash
 from rdkit import Chem
 from rdkit.Chem import AllChem, rdDistGeom
@@ -78,9 +79,17 @@ import streamlit as st
 
 ## 🎥 How it works
 
-The interface enables the user to input a smiles of a molecule and choose if nucleophilicity or electrophilicity is highlighted. The interface will then display the molecule in 3D with the chosen site highlighted. An example of the input and output is shown below:
+The user arrives to the RankChem Homepage where they can choose which feature they want to use.
 
-XXX
+![homepage](assets/homepage.png)
+
+The Highlight feature enabnles the user to input the smiles of a molecule and choose if nucleophilicity or electrophilicity is highlighted. The interface will then display the molecule in 3D with the chosen site highlighted. The user can also choose the visualiation style and the number of iterations in order to get a more precise result. The Fukui values of each atom will also be displayed. An example of the input and output is shown below:
+
+![highlight](assets/highlightexample.png)
+
+Lastly, the Ranking feature enable the user to input multiple smiles and again choose if nucleophilicity or electrophilicity is analysed. The interface will then return the moelcules with highest: the most electrophile/nucleophile molecule and lowest the least electrophile/nucleophile molecule. Their corresponding descriptors values are also displayed. An example is shown below:
+
+![ranking](assets/rankingexample.png)
 
 ## 🚥 Let's get started!
 
@@ -89,4 +98,3 @@ The streamlit interface can now finally be used!!
 Just click on the logo below ;)
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://<your-custom-subdomain>.streamlit.app)
-....

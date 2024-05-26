@@ -110,7 +110,7 @@ def visualize_molecule(smiles, max_idx, highlight_color, representation):
     view.setStyle({representation.lower(): {}})
     view.addStyle({'model': -1, 'serial': max_idx-1}, {'sphere': {'radius': 0.5, 'color': highlight_color, 'opacity': 0.8}})
     view.zoomTo()
-    showmol(view, height=800, width=1000)  
+    showmol(view, height=600, width=800)  
 
 
 def run_Highlighting():
