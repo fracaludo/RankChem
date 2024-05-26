@@ -94,7 +94,7 @@ def visualize_molecule(smiles, max_idx, highlight_color, representation):
     smiles: The SMILES representation of the molecule.
     max_idx: The index of the atom with the highest average Fukui function value, used for visualization highlighting.
     highlight_color: The color to highlight the atom with the highest Fukui value.
-    representation: The representation style for the 3D visualization (e.g., Stick, Line, Cross, Sphere, Cartoon).
+    representation: The representation style for the 3D visualization (e.g., Stick, Line, Cross, Sphere).
 
     Output:
     Displays the interactive 3D visualization of the molecule.
@@ -105,12 +105,13 @@ def visualize_molecule(smiles, max_idx, highlight_color, representation):
     AllChem.UFFOptimizeMolecule(mol)
 
     mol_block = Chem.MolToMolBlock(mol)
-    view = py3Dmol.view(width=800, height=600)
+    view = py3Dmol.view(width=1000, height=800) 
     view.addModel(mol_block, "mol")
     view.setStyle({representation.lower(): {}})
     view.addStyle({'model': -1, 'serial': max_idx-1}, {'sphere': {'radius': 0.5, 'color': highlight_color, 'opacity': 0.8}})
     view.zoomTo()
-    showmol(view, height=500, width=500)
+    showmol(view, height=800, width=1000)  
+
 
 def run_Highlighting():
     '''
@@ -125,16 +126,16 @@ def run_Highlighting():
     Displays the user interface and results of the Fukui analysis and molecular visualization.
     '''
     st.title("Molecule Visualization and Fukui Analysis")
-    st.write("Use the options in the sidebar to visualize the molecule and highlight Fukui indices.")
+    st.write("Use the options below to visualize the molecule and highlight Fukui indices.")
 
-    # Input options
-    user_input = st.sidebar.text_input("Enter a SMILES string:", "CC=O")
-    fukui_type = st.sidebar.radio("Highlight nucleophile sites (N) or electrophile sites (E)?", ["E", "N"])
-    num_iterations = st.sidebar.slider("Number of iterations", min_value=1, max_value=10, value=1)
-    highlight_color = st.sidebar.color_picker("Highlight color", "#FF5733")
-    representation = st.sidebar.selectbox("Choose Py3Dmol representation", ["Stick", "Line", "Cross", "Sphere", "Cartoon"])
+    # Input options moved from sidebar to main content
+    user_input = st.text_input("Enter a SMILES string:", "CC=O")
+    fukui_type = st.radio("Highlight nucleophile sites (N) or electrophile sites (E)?", ["E", "N"])
+    num_iterations = st.slider("Number of iterations", min_value=1, max_value=10, value=1)
+    highlight_color = st.color_picker("Highlight color", "#FF5733")
+    representation = st.selectbox("Choose Py3Dmol representation", ["Stick", "Line", "Cross", "Sphere"])
     
-    if st.sidebar.button("Submit"):
+    if st.button("Submit"):
         # Generate XYZ file
         xyz_filename = smiles_to_xyz(user_input)
         elements, coordinates = read_xyz(xyz_filename)
