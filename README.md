@@ -26,7 +26,7 @@ Now let's go through the steps required to use this package.
 
 ## 👩‍💻 Installation
 
-❗ Before installing the package and all the dependencies, do not forget to create a new conda environment to prevent dependency conflicts and to keep the project isolated. This can be done by executing the folowing command:
+❗ Before installing the package and all the dependencies, do not forget to create a new conda environment to prevent dependency conflicts and to keep the project isolated. This can be done by executing the following command:
 
 ```bash
 conda create --name myenv python=3.10
@@ -120,7 +120,7 @@ Lastly, the Ranking feature enable the user to input multiple smiles and again c
 
 ![ranking](assets/rankingexample.png)
 
-More information on the usage and limitations of the package can be found in our [jupyter notebook based report]https://github.com/fracaludo/RankChem/blob/main/notebooks/project_report.ipynb 📓
+More information on the usage and limitations of the package can be found in our [jupyter notebook based report](https://github.com/fracaludo/RankChem/blob/main/notebooks/project_report.ipynb) 📓
 
 ## 🚥 Let's get started!
 
