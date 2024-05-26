@@ -26,7 +26,7 @@ Now let's go through the steps required to use this package.
 
 ## 👩‍💻 Installation
 
-❗ Before installing the package and all the dependencies, do not forget to create a new conda environment to prevent dependency conflicts and to keep the project isolated. This can be done by executing the folowing command:
+❗ Before installing the package and all the dependencies, do not forget to create a new conda environment to prevent dependency conflicts and to keep the project isolated. This can be done by executing the following command:
 
 ```bash
 conda create --name myenv python=3.10
