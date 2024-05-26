@@ -6,8 +6,8 @@ import sys
 st.set_page_config(layout="wide")
 
 current_dir = Path(__file__).parent.resolve()
-for_streamlit_dir = current_dir / 'src' / 'RankChem' / 'for_streamlit'
-images_dir = current_dir / 'src' / 'RankChem' / 'images'
+for_streamlit_dir = current_dir / 'src' / 'Rankchem' / 'for_streamlit'
+images_dir = current_dir / 'src' / 'Rankchem' / 'images'
 sys.path.insert(0, str(for_streamlit_dir))
 
 
