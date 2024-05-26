@@ -1,4 +1,4 @@
-![logo](nkChem.png)
+![project logo](assets/nkChem.png)
 
 # ChemInterface package for reactivity analysis
 ### Project in practical programming in chemistry course EPFL CH-200
