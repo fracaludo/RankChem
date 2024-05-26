@@ -54,10 +54,10 @@ pip install git+https://github.com/fracaludo/RankChem.git
 ```
 #### Imported packages
 
-In order to run the package correctly, the following packages need to be installed using the following commands. Moreover, this package works for python ....
 
+In order to run the package correctly, the following packages need to be installed using the following commands. The package runs on python 3.10 but supports python 3.8 through 3.10. It is recommended that dependencies are installed with conda if possible as the performance of the linear algebra backends is generally better than with pip.
 
-It is recommended that dependencies are installed with conda if possible as the performance of the linear algebra backends is generally better than with pip.
+❗ xtb-python only works for IOS and Linux. If you are using Windows, you should install Ubuntu. Further information is available on: https://ubuntu.com/desktop/wsl
 
 Libblas and xtb-python are not pip installable, however, you can install them by running the following commands in your terminal:
 
