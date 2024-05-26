@@ -104,8 +104,6 @@ import py3Dmol
 
 This project hase an interface based UI to interact with the functions. In order to use it, go to the directory where you cloned the repository and run the following commands in your terminal:
 ```bash
-cd src
-cd Rankchem
 streamlit run app.py
 ```
 The user then arrives to the RankChem Homepage where they can choose which feature they want to use.
