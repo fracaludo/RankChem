@@ -1,3 +1,5 @@
+![logo](nkChem.png)
+
 # ChemInterface package for reactivity analysis
 ### Project in practical programming in chemistry course EPFL CH-200
 [![alt text](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)

@@ -2,9 +2,9 @@
 Code Repository and Python Package (30%)
 
 - Contribution from all team members OK
-- Organization, quality, and clarity of the code repository and Python package (see this project as an example for the organization -> https://github.com/pschwllr/minimal_project, you can obtain the same template for your project using https://github.com/schwallergroup/copier-liac-minimal) SOON OK
-- Completeness of README file (it should be clear how to install and use the package) SOON OK
-- Functions/classes/modules documented with doc strings (potential Sphinx integration for automated API documentation) OK
+- Organization, quality, and clarity of the code repository and Python package (see this project as an example for the organization -> https://github.com/pschwllr/minimal_project, you can obtain the same template for your project using https://github.com/schwallergroup/copier-liac-minimal) SOON OK MONDAY
+- Completeness of README file (it should be clear how to install and use the package) SOON OK MONDAY
+- Functions/classes/modules documented with doc strings OK
 - Tests for the package functionality (one or more tests per function) OK
 - License (to let other people know how they can reuse the code) OK
 
