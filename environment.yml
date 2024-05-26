@@ -10,3 +10,10 @@ dependencies:
   - streamlit
   - stmol
   - xtb python
+  - pip:
+      - morfeus_ml==0.7.2
+      - pytest==8.2.1
+      - setuptools==69.5.1
+      - Sphinx==7.3.7
+      - ipython_genutils==0.2.0
+      - stmol
