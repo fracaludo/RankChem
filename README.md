@@ -76,7 +76,7 @@ import streamlit as st
 
 ## 🎥 How it works
 
-The interface enables the user to input a smiles of a molecule. He/She can then choose if nucleophilicity or electrophilicity is highlighted. The interface will then display the molecule in 3D with the chosen site highlighted. An example of the input and output is shown below:
+The interface enables the user to input a smiles of a molecule and choose if nucleophilicity or electrophilicity is highlighted. The interface will then display the molecule in 3D with the chosen site highlighted. An example of the input and output is shown below:
 
 XXX
 

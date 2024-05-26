@@ -87,12 +87,12 @@ def run_Ranking():
     Displays the ranked list of molecules based on their descriptor values.
     '''
     st.title("Molecule Ranking")
-    st.write("This window runs the molecule ranking script.")
+    st.write("Use the options below to rank molecules in order of decreasing reacivity (Top molecule will be most reactive and bottom molecule the least reactive).")
 
     # Input widgets for Streamlit
     user_input = st.text_input("Enter a list of SMILES strings separated by commas:", "CC=O,CC(=O)C,O=COC,CN(C)C(C)=O")
     descriptor_type = st.radio("Should we be ranking according to nucleophilicity (N) or electrophilicity (E)?", ('N', 'E'))
-    iterations = st.slider("Number of iterations", min_value=1, max_value=100, value=10)
+    iterations = st.slider("Number of iterations (increase for a more precise result).", min_value=1, max_value=100, value=10)
     
     if st.button("Run Ranking"):
         smiles_list = [smiles.strip() for smiles in user_input.split(',')]

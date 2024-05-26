@@ -129,11 +129,11 @@ def run_Highlighting():
     st.write("Use the options below to visualize the molecule and highlight Fukui indices.")
 
     # Input options moved from sidebar to main content
-    user_input = st.text_input("Enter a SMILES string:", "CC=O")
+    user_input = st.text_input("Enter a SMILES string that you want to analyse:", "CC=O")
     fukui_type = st.radio("Highlight nucleophile sites (N) or electrophile sites (E)?", ["E", "N"])
-    num_iterations = st.slider("Number of iterations", min_value=1, max_value=10, value=1)
+    num_iterations = st.slider("Number of iterations (increase for a more precise result).", min_value=1, max_value=10, value=1)
     highlight_color = st.color_picker("Highlight color", "#FF5733")
-    representation = st.selectbox("Choose Py3Dmol representation", ["Stick", "Line", "Cross", "Sphere"])
+    representation = st.selectbox("Choose a Py3Dmol representation style", ["Stick", "Line", "Cross", "Sphere"])
     
     if st.button("Submit"):
         # Generate XYZ file
@@ -152,7 +152,7 @@ def run_Highlighting():
         fukui_avg = average(fukui_dicts)
         max_idx, max_value = get_max_fukui_avg(fukui_avg)
         
-        st.write(f"Fukui average values: {fukui_avg}")
-        st.write(f"Atom with max average Fukui value: {max_idx} with value {max_value}")
+        st.write(f"The Fukui average values are : {fukui_avg}")
+        st.write(f"The atom with the highest average Fukui value is: {max_idx} with a value of {max_value}")
         
         visualize_molecule(user_input, max_idx, highlight_color, representation)
