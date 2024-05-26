@@ -7,7 +7,6 @@ setup(
     package_dir={'': 'src'},
     install_requires=[
         'rdkit',
-        'xtb-python',
         'morfeus-ml',
         'pyvistaqt',
         'numpy',

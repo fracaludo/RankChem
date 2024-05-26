@@ -27,6 +27,7 @@ Now let's go through the steps required to use this package.
 ## 👩‍💻 Installation
 
 RankChem can be installed using pip as followed:
+
 ```bash
 pip install Rankchem
 ```
@@ -34,14 +35,18 @@ pip install Rankchem
 The package can also be installed from source by running the following commands:
 
 First, clone the repository from Github and go in the RankChem folder.
+
 ```bash
 git clone [https://github.com/fracaludo/RankChem.git]
 cd RankChem
 ```
+
 Then, install the package using :
+
 ```bash
 pip install -e .
 ```
+
 Or by installing it directly from Github via pip:
 
 ```bash
@@ -51,30 +56,37 @@ pip install git+https://github.com/fracaludo/RankChem.git
 
 In order to run the package correctly, the following packages need to be installed using the following commands. Moreover, this package works for python ....
 
-```bash
-conda config --add channels conda-forge
 
-conda install -c conda-forge morfeus-ml
+It is recommended that dependencies are installed with conda if possible as the performance of the linear algebra backends is generally better than with pip.
+
+Libblas and xtb-python are not pip installable, however, you can install them by running the following commands in your terminal:
+
+```bash
 conda install "libblas=*=*mkl"
 conda install xtb-python
+```
+
+The packages below should have been installed but if not, use the following commands:
+ 
+```bash
+conda install -c conda-forge morfeus-ml
 conda install -c conda-forge rdkit
 conda install -c conda-forge pyvistaqt
 conda install -c conda-forge numpy
 conda install -c conda-forge py3Dmol
 conda install -c streamlit
 conda install -c stmol
-
 ```
 
 Specifically, from these packages, the following subpackages are required:
 
 ```bash
+import streamlit as st
 from rdkit import Chem
 from rdkit.Chem import AllChem, rdDistGeom
 from morfeus import read_xyz, XTB
+from stmol import showmol
 import py3Dmol
-import streamlit as st
-
 ```
 
 ## 🎥 How it works
@@ -99,7 +111,7 @@ Just click on the logo below ;)
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://<your-custom-subdomain>.streamlit.app)
 
-## 🚥 References an documentation
+## 🔎 References an documentation
 
 Here is some usefull reading on the packages that we used to create this project.
 
