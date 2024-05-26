@@ -120,7 +120,7 @@ Lastly, the Ranking feature enable the user to input multiple smiles and again c
 
 ![ranking](assets/rankingexample.png)
 
-More information on the usage and limitations of the package can be found in our [jupyter notebook based report]https://github.com/fracaludo/RankChem/blob/main/notebooks/project_report.ipynb 📓
+More information on the usage and limitations of the package can be found in our [jupyter notebook based report](https://github.com/fracaludo/RankChem/blob/main/notebooks/project_report.ipynb) 📓
 
 ## 🚥 Let's get started!
 
