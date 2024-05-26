@@ -112,7 +112,7 @@ OR just jump to the *🚥 Let's get started!* section below and click on the str
 
 ![homepage](assets/homepage.png)
 
-The Highlight feature enabnles the user to input the smiles of a molecule and choose if nucleophilicity or electrophilicity is highlighted. The interface will then display the molecule in 3D with the chosen site highlighted. The user can also choose the visualiation style and the number of iterations in order to get a more precise result. The Fukui values of each atom will also be displayed. An example of the input and output is shown below:
+The Highlight feature enables the user to input the smiles of a molecule and choose if nucleophilicity or electrophilicity is highlighted. The interface will then display the molecule in 3D with the chosen site highlighted. The user can also choose the visualiation style and the number of iterations in order to get a more precise result. The Fukui values of each atom will also be displayed. An example of the input and output is shown below:
 
 ![highlight](assets/highlightexample.png)
 
