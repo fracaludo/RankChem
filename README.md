@@ -46,7 +46,7 @@ The package can also be installed from source by running the following commands:
 First, clone the repository from Github and go in the RankChem folder.
 
 ```bash
-git clone [https://github.com/fracaludo/RankChem.git]
+git clone https://github.com/fracaludo/RankChem.git
 cd RankChem
 ```
 
