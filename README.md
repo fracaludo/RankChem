@@ -130,6 +130,10 @@ Just click on the logo below ;)
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rankchem.streamlit.app/)
 
+
+## ❗❗ Important
+The package displays the wrong active sites and the ranking is often wrong. This is due to fukui dictionnaries/global descriptors inconsistencies from morfeus-ml or xtb-python. This issue is out of our reach. Sorry :(
+
 ## 🔎 References an documentation
 
 Here is some useful reading on the packages that we used to create this project.
