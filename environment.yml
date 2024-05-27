@@ -352,4 +352,5 @@ dependencies:
       - tomlkit==0.12.5
       - widgetsnbextension==3.5.2
       - yarg==0.1.9
+      - rdkit=2022.09.5
 prefix: /Users/ludovica/miniconda3/envs/morfeus
