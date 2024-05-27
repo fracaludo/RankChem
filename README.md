@@ -124,7 +124,7 @@ More information on the usage and limitations of the package can be found in our
 
 ## 🚥 Let's get started!
 
-The streamlit interface can now finally be used!!
+The streamlit interface can now finally be used!! ⚠️ currently not working due to conda environment.yml problems
 
 Just click on the logo below ;)
 
