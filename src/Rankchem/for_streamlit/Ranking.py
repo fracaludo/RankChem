@@ -98,9 +98,9 @@ def run_Ranking():
         smiles_list = [smiles.strip() for smiles in user_input.split(',')]
         descriptors = calculate_descriptor(smiles_list, descriptor_type, iterations)
         ranked_descriptors = rank_descriptors(descriptors)
-        print(ranked_descriptors)
+
         st.write("Ranked list of molecules based on their descriptors:")
-        for smiles descriptor,i in enumerate(ranked_descriptors):
+        for smiles descriptor in ranked_descriptors:
             st.write(f"{smiles}: {descriptor}")
 
 if __name__ == "__main__":
