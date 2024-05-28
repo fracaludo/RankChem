@@ -141,7 +141,7 @@ def run_Highlighting():
         elements, coordinates = read_xyz(xyz_filename)
         
         # Calculate Fukui indices
-        fukui_type_map = {"E": "local_nucleophilicity", "N": "local_electrophilicity"}
+        fukui_type_map = {"E": "nucleophilicity", "N": "electrophilicity"}
         fukui_type_str = fukui_type_map.get(fukui_type.upper())
         
         fukui_dicts = []
