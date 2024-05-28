@@ -7,7 +7,7 @@
 [![jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
 ![license](https://img.shields.io/badge/License-MIT-ac8b11.svg?style=for-the-badge&labelColor=green)
 
-## 🔥 Usage
+## 🔥 What is Rankchem about?
 
 This repository provides the user with a package which will display an interactive interface where the user will be able to analyse the reactivity of meolecules based on their electrophilicity or nucleophilicity. The package leads the user to a streamlit hompage. Two features are available. The first one enables the user to visulaize a molecule in 3D with the reactive site highlighted. The second feature ranks multiple molecule in the order of decreasing reactivity based on descriptors. Both these feature were made using XTB calculations.
 
@@ -124,7 +124,7 @@ More information on the usage and limitations of the package can be found in our
 
 ## 🚥 Let's get started!
 
-The streamlit interface can now finally be used!! ⚠️ currently not working due to conda environment.yml problems
+The streamlit interface can now finally be used!! ⚠️ currently not working due to conda environment.yml problems. In order to open the working interface, follow the steps descibed previously in your terminal.
 
 Just click on the logo below ;)
 
