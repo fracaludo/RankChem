@@ -1,9 +1,12 @@
 from setuptools import setup, find_packages
 
+with open('README.md', 'r', encoding='utf-8') as fh:
+    long_description = fh.read()
+
 setup(
     name='rankchem',
     version='1.1.2',
-    packages=find_packages(where='src/RankChem/for_streamlit'),
+    packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
         'rdkit',
@@ -16,8 +19,9 @@ setup(
     ],
     python_requires='>=3.8',
     author='Emma Kappeler, Ludovica Fracassi',
-    author_email='emma.kappeler@epfl.ch, ludovica.fracassi@epfl.ch',
+    author_email='emma.kappeler@epfl.ch,ludovica.fracassi@epfl.ch',
     description='RankChem project',
+    long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/kappelemma/RankChem',
     classifiers=[
