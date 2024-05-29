@@ -38,7 +38,7 @@ The package runs on python 3.10 but supports python 3.8 through 3.10.
 RankChem can be installed using pip as followed:
 
 ```bash
-pip install Rankchem
+pip install RankChem
 ```
 
 The package can also be installed from source by running the following commands:

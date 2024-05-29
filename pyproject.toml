@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/Rankchem"]
+packages = ["src/Rankchem/__init__.py"]
 
 [project]
 name = "RankChem"
@@ -61,7 +61,6 @@ doc = [
 
 [tool.hatch.version]
 path = "src/Rankchem/__init__.py"
-version = "1.1.1"
 
 [tool.pytest.ini_options]
 testpaths = [
