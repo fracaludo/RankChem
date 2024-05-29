@@ -88,7 +88,7 @@ def run_Ranking():
     '''
   
     st.title("Molecule Ranking")
-    st.write("This window runs the molecule ranking script.")
+    st.write("Use the options below to rank molecules in order of decreasing reactivity(top molecule is most reactive)")
 
     # Input widgets for Streamlit
     user_input = st.text_input("Enter a list of SMILES strings separated by commas:", "CC=O,CC(=O)C,O=COC,CN(C)C(C)=O")
