@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='rankchem',
-    version='1.1.1',
+    version='1.1.2',
     packages=find_packages(where='src/RankChem/for_streamlit'),
     package_dir={'': 'src'},
     install_requires=[
