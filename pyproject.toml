@@ -2,11 +2,9 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.hatch.build.targets.wheel]
-packages = ["src/Rankchem/for_streamlit/__init__.py"]
-
 [project]
 name = "RankChem"
+version = "1.1.4"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {file = "LICENSE"}
@@ -21,11 +19,11 @@ dependencies = [
      "stmol"
 ]
 
-
 authors = [
     {name = "Emma Kappeler", email = "emma.kappeler@epfl.ch"},
     {name = "Ludovica Fracassi", email = "ludovica.fracassi@epfl.ch"}
 ]
+
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -38,11 +36,10 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
 ]
-dynamic = ["version"]
+
 
 [project.urls]
-source = "https://github.com/kappelemma/RankChem"
-tracker = "https://github.com/kappelemma/RankChem/issues"
+Homepage = "https://github.com/kappelemma/RankChem"
 
 [project.optional-dependencies]
 test = [
@@ -51,28 +48,4 @@ test = [
     "pytest-cov",
     "tox",
     "genbadge[coverage]",
-]
-doc = [
-    "furo",
-    "myst-parser",
-    "sphinx>=5",
-    "sphinx-copybutton",
-]
-
-[tool.hatch.version]
-path = "src/Rankchem/for_streamlit/__init__.py"
-
-[tool.pytest.ini_options]
-testpaths = [
-    "tests",
-]
-
-[tool.coverage.run]
-omit = [
-    '__init__.py'
-]
-
-[tool.coverage.report]
-exclude_also = [
-    "if __name__ == .__main__.:",
 ]
