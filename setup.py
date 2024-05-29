@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setup(
     name='rankchem',
-    version='1.1.3',
+    version='1.1.4',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
