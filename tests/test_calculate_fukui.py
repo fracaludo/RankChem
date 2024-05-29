@@ -4,7 +4,7 @@ import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from Rankchem.for_streamlit.Highlighting import calculate_fukui
+from Rankchem.Highlighting import calculate_fukui
 
 def test_calculate_fukui():
     elements = ['C', 'O', 'H', 'H']

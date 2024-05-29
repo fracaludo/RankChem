@@ -4,7 +4,7 @@ import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from Rankchem.for_streamlit.Ranking import rank_descriptors
+from Rankchem.Ranking import rank_descriptors
 
 def test_rank_descriptors():
     descriptors = [('SMILES1', 0.5), ('SMILES2', 0.3), ('SMILES3', 0.7)]

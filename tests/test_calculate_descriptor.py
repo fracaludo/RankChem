@@ -4,7 +4,7 @@ import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from Rankchem.for_streamlit.Ranking import calculate_descriptor
+from Rankchem.Ranking import calculate_descriptor
 
 def test_calculate_descriptor():
     smiles_list = ["CC=O", "CC(=O)C"]

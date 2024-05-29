@@ -4,7 +4,7 @@ import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from Rankchem.for_streamlit.Highlighting import average
+from Rankchem.Highlighting import average
 
 def test_average():
     fukui_dicts = [{0: 0.1, 1: 0.2}, {0: 0.2, 1: 0.1}]
