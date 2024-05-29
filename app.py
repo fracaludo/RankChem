@@ -7,7 +7,7 @@ st.set_page_config(layout="wide")
 
 current_dir = Path(__file__).parent.resolve()
 for_streamlit_dir = current_dir / 'src' / 'Rankchem' 
-images_dir = current_dir / 'src' / 'Rankchem' / 'images'
+images_dir = current_dir / 'src' / 'Rankchem' 
 sys.path.insert(0, str(for_streamlit_dir))
 
 
