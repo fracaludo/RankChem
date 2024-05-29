@@ -23,7 +23,7 @@ setup(
     description='RankChem project',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/kappelemma/RankChem',
+    url='https://github.com/fracaludo/RankChem',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',

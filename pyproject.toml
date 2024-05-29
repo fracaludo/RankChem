@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 
 [tool.hatchling.build.targets.wheel]
-packages = ["src/RankChem"]
+packages = ["src/Rankchem"]
 
 
 [project]
@@ -44,7 +44,7 @@ classifiers = [
 
 
 [project.urls]
-Homepage = "https://github.com/kappelemma/RankChem"
+Homepage = "https://github.com/fracaludo/RankChem"
 
 [project.optional-dependencies]
 test = [
