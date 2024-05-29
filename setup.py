@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setup(
     name='rankchem',
-    version='1.1.5',
+    version='1.2.5',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
@@ -15,7 +15,8 @@ setup(
         'numpy',
         'py3Dmol',
         'streamlit',
-        'stmol'
+        'stmol',
+        'ipython_genutils'
     ],
     python_requires='>=3.8',
     author='Emma Kappeler, Ludovica Fracassi',

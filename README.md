@@ -3,13 +3,13 @@
 # ChemInterface for Reactivity Analysis
 ### Project in the *Practical programming in chemistry* course EPFL CH-200
 [![python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fracaludo/RankChem)
 [![jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
-![license](https://img.shields.io/badge/License-MIT-ac8b11.svg?style=for-the-badge&labelColor=green)
+[![license](https://img.shields.io/badge/License-MIT-ac8b11.svg?style=for-the-badge&labelColor=green)](https://github.com/fracaludo/RankChem?tab=License-1-ov-file)
 
-## 🔥 What is Rankchem about?
+## 🔥 What is RankChem about?
 
-This repository provides the user with a package which will display an interactive interface where the user will be able to analyse the reactivity of meolecules based on their electrophilicity or nucleophilicity. The package leads the user to a streamlit hompage. Two features are available. The first one enables the user to visulaize a molecule in 3D with the reactive site highlighted. The second feature ranks multiple molecule in the order of decreasing reactivity based on descriptors. Both these feature were made using XTB calculations.
+This repository provides the user with a package which will display an interactive interface where the user will be able to analyse the reactivity of meolecules based on their electrophilicity or nucleophilicity. The package leads the user to a streamlit homepage. Two features are available. The first one enables the user to visualize a molecule in 3D with the reactive site highlighted. The second feature ranks multiple molecules in the order of decreasing reactivity based on descriptors. Both these features were made using XTB calculations.
 
 The developpers of this package are:
 - Ludovica Fracassi, 2nd year Bachelor student in Chemistry and Chemical engeneering at EPFL [![jhc github](https://img.shields.io/badge/GitHub-fracaludo-181717.svg?style=flat&logo=github)](https://github.com/fracaludo)
@@ -38,22 +38,22 @@ The package runs on python 3.10 but supports python 3.8 through 3.10.
 RankChem can be installed using pip as followed:
 
 ```bash
-pip install RankChem
+pip install RankChem==1.2.5
 ```
 
-The package can also be installed from source by running the following commands:
+The package can also be installed locally from source by running the following commands:
 
 First, clone the repository from Github and go in the RankChem folder.
 
 ```bash
 git clone https://github.com/fracaludo/RankChem.git
-cd RankChem
+cd /to_dir/
 ```
 
 Then, install the package using :
 
 ```bash
-pip install -e .
+pip install .
 ```
 
 Tha package can also be installed directly from Github via pip by executing the following command:
@@ -87,6 +87,7 @@ conda install -c conda-forge numpy
 conda install -c conda-forge py3Dmol
 conda install -c streamlit
 conda install -c stmol
+conda install ipython_genutils
 ```
 
 Specifically, from these packages, the following subpackages are required:
@@ -102,7 +103,7 @@ import py3Dmol
 
 ## 🎥 How it works
 
-This project hase an interface based UI to interact with the functions. In order to use it, go to the directory where you cloned the repository and run the following commands in your terminal:
+This project has an interface based UI to interact with the functions. In order to use it, go to the directory where you cloned the repository and run the following commands in your terminal:
 ```bash
 streamlit run app.py
 ```
@@ -112,11 +113,11 @@ OR just jump to the *🚥 Let's get started!* section below and click on the str
 
 ![homepage](assets/homepage.png)
 
-The Highlight feature enables the user to input the smiles of a molecule and choose if nucleophilicity or electrophilicity is highlighted. The interface will then display the molecule in 3D with the chosen site highlighted. The user can also choose the visualiation style and the number of iterations in order to get a more precise result. The Fukui values of each atom will also be displayed. An example of the input and output is shown below:
+The Highlight feature enables the user to input the smiles of a molecule and choose if nucleophilicity or electrophilicity is highlighted. The interface will then display the molecule in 3D with the chosen site highlighted. The user can also choose the visualiation style, the colour of the highlight and the number of iterations in order to get a more precise result. The Fukui values of each atom will also be displayed. An example of the input and output is shown below:
 
 ![highlight](assets/highlightexample.png)
 
-Lastly, the Ranking feature enable the user to input multiple smiles and again choose if nucleophilicity or electrophilicity is analysed. The interface will then return the moelcules with highest: the most electrophile/nucleophile molecule and lowest the least electrophile/nucleophile molecule. Their corresponding descriptors values are also displayed. An example is shown below:
+Lastly, the Ranking feature enable the user to input multiple smiles and again choose if nucleophilicity or electrophilicity is analysed. The interface will then return the molecules with highest: the most electrophile/nucleophile molecule, and lowest: the least electrophile/nucleophile molecule. Their corresponding descriptors values are also displayed. An example is shown below:
 
 ![ranking](assets/rankingexample.png)
 
@@ -132,7 +133,7 @@ Just click on the logo below ;)
 
 
 ## ❗❗ Important
-The package displays the wrong active sites and the ranking is often wrong. This is due to fukui dictionnaries/global descriptors inconsistencies from morfeus-ml or xtb-python. This issue is out of our reach. Sorry :(
+The package displays the wrong active sites and the ranking is often wrong. This, we think, is due to fukui dictionnaries/global descriptors inconsistencies from morfeus-ml or xtb-python. This issue is out of our reach. Sorry :(
 
 ## 🔎 References an documentation
 

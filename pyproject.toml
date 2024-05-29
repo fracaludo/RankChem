@@ -9,7 +9,7 @@ packages = ["src/Rankchem"]
 
 [project]
 name = "RankChem"
-version = "1.1.5"
+version = "1.2.5"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {file = "LICENSE"}
@@ -21,7 +21,8 @@ dependencies = [
      "numpy",
      "py3Dmol",
      "streamlit",
-     "stmol"
+     "stmol",
+     "ipython_genutils"
 ]
 
 authors = [
