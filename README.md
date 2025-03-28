@@ -1,7 +1,7 @@
 ![project logo](assets/nkChem.png)
 
 # ChemInterface for Reactivity Analysis
-### Project in the *Practical programming in chemistry* course EPFL CH-200
+### Project in the *Practical programming in chemistry* course EPFL CH-200, Grade 5.5/6
 [![python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fracaludo/RankChem)
 [![jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
@@ -12,8 +12,8 @@
 This repository provides the user with a package which will display an interactive interface where the user will be able to analyse the reactivity of meolecules based on their electrophilicity or nucleophilicity. The package leads the user to a streamlit homepage. Two features are available. The first one enables the user to visualize a molecule in 3D with the reactive site highlighted. The second feature ranks multiple molecules in the order of decreasing reactivity based on descriptors. Both these features were made using XTB calculations.
 
 The developpers of this package are:
-- Ludovica Fracassi, 2nd year Bachelor student in Chemistry and Chemical engeneering at EPFL [![jhc github](https://img.shields.io/badge/GitHub-fracaludo-181717.svg?style=flat&logo=github)](https://github.com/fracaludo)
-- Emma Kappeler, 2nd year Bachelor student in Chemistry and Chemical engeneering at EPFL [![jhc github](https://img.shields.io/badge/GitHub-kappelemma-181717.svg?style=flat&logo=github)](https://github.com/kappelemma)
+- Ludovica Fracassi, 3rd year Bachelor student in Chemical engeneering at EPFL [![jhc github](https://img.shields.io/badge/GitHub-fracaludo-181717.svg?style=flat&logo=github)](https://github.com/fracaludo)
+- Emma Kappeler, 3rd year Bachelor student in Chemical engeneering at EPFL [![jhc github](https://img.shields.io/badge/GitHub-kappelemma-181717.svg?style=flat&logo=github)](https://github.com/kappelemma)
 
 
 Before installing everything, let's first define electrophilicity and nucleophilicity!!
